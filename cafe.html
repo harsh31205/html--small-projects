@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshit Cafe - Delicious Food in Durg</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        nav {
+            background: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        section {
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1200x400?text=Welcome+to+Harshit+Cafe') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        .hero h2 {
+            font-size: 2.5em;
+        }
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .menu-item {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .menu-item:hover {
+            transform: translateY(-5px);
+        }
+        .menu-item h3 {
+            color: #667eea;
+        }
+        .about, .contact {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Harshit Cafe</h1>
+        <p>Your Favorite Spot for Delicious Meals in Durg</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="home" class="hero">
+        <div>
+            <h2>Welcome to Harshit Cafe</h2>
+            <p>Indulge in our mouth-watering dishes and refreshing beverages. From traditional Indian favorites to international delights!</p>
+        </div>
+    </section>
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu">
+            <div class="menu-item">
+                <h3>Dosa</h3>
+                <p>Crispy South Indian crepe served with chutney and sambar.</p>
+                <p><strong>Price:</strong> ₹80</p>
+            </div>
+            <div class="menu-item">
+                <h3>Chai</h3>
+                <p>Traditional Indian tea, brewed to perfection.</p>
+                <p><strong>Price:</strong> ₹20</p>
+            </div>
+            <div class="menu-item">
+                <h3>Waffles</h3>
+                <p>Fluffy Belgian waffles with toppings like chocolate, fruits, or syrup.</p>
+                <p><strong>Price:</strong> ₹150</p>
+            </div>
+            <div class="menu-item">
+                <h3>Chole Bhature</h3>
+                <p>Spicy chickpea curry with deep-fried bread.</p>
+                <p><strong>Price:</strong> ₹100</p>
+            </div>
+            <div class="menu-item">
+                <h3>Coffee</h3>
+                <p>Freshly brewed coffee in various styles.</p>
+                <p><strong>Price:</strong> ₹50</p>
+            </div>
+            <div class="menu-item">
+                <h3>Sandwiches</h3>
+                <p>Grilled sandwiches with veggies, cheese, or meat options.</p>
+                <p><strong>Price:</strong> ₹120</p>
+            </div>
+            <div class="menu-item">
+                <h3>Burgers</h3>
+                <p>Juicy burgers with patties, lettuce, and sauces.</p>
+                <p><strong>Price:</strong> ₹180</p>
+            </div>
+            <div class="menu-item">
+                <h3>Juices</h3>
+                <p>Fresh fruit juices like orange, mango, or mixed.</p>
+                <p><strong>Price:</strong> ₹60</p>
+            </div>
+            <div class="menu-item">
+                <h3>Pizza</h3>
+                <p>Wood-fired pizzas with various toppings.</p>
+                <p><strong>Price:</strong> ₹250</p>
+            </div>
+            <div class="menu-item">
+                <h3>Pasta</h3>
+                <p>Creamy or tomato-based pasta dishes.</p>
+                <p><strong>Price:</strong> ₹200</p>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Harshit Cafe is a cozy spot in Deepak Nagar, Durg, offering a blend of traditional Indian cuisine and modern cafe favorites. We pride ourselves on using fresh ingredients and providing excellent service to make every visit memorable.</p>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Address:</strong> Deepak Nagar, Durg</p>
+        <p><strong>Mobile:</strong> 9893321342</p>
+        <p>Feel free to call us for reservations or inquiries!</p>
+    </section>
+    <footer>
+        <p>&copy; 2023 Harshit Cafe. All rights reserved.</p>
+    </footer>
+</body>
+</html>
