@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Calculator</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: #f4f4f4;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.calculator {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+input {
+    width: 90%;
+    padding: 8px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+button {
+    width: 45%;
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.add { background: #4CAF50; color: white; }
+.sub { background: #f44336; color: white; }
+.mul { background: #2196F3; color: white; }
+.div { background: #ff9800; color: white; }
+
+#res {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="calculator">
+    <h2>Calculator</h2>
+
+    <input type="number" id="a" placeholder="Enter first number">
+    <input type="number" id="b" placeholder="Enter second number">
+
+    <br>
+
+    <button class="add" onclick="add()">+</button>
+    <button class="sub" onclick="sub()">-</button>
+    <button class="mul" onclick="mul()">*</button>
+    <button class="div" onclick="divi()">/</button>
+
+    <p id="res">Result: </p>
+</div>
+
+<script>
+function getValues() {
+    let x = Number(document.getElementById("a").value);
+    let y = Number(document.getElementById("b").value);
+    return {x, y};
+}
+
+function add(){
+    let {x, y} = getValues();
+    document.getElementById("res").innerHTML = "Result: " + (x + y);
+}
+
+function sub(){
+    let {x, y} = getValues();
+    document.getElementById("res").innerHTML = "Result: " + (x - y);
+}
+
+function mul(){
+    let {x, y} = getValues();
+    document.getElementById("res").innerHTML = "Result: " + (x * y);
+}
+
+function divi(){
+    let {x, y} = getValues();
+    if(y === 0){
+        document.getElementById("res").innerHTML = "Cannot divide by 0";
+    } else {
+        document.getElementById("res").innerHTML = "Result: " + (x / y);
+    }
+}
+</script>
+
+</body>
+</html>
