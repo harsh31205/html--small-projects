@@ -7,7 +7,7 @@ Basically, I was just practicing and trying out different things, so I put all t
 
 
 
-## 📌 What’s inside
+📌 What’s inside
 
 * Simple advertisement webpage
 * Calculator
@@ -18,7 +18,7 @@ Basically, I was just practicing and trying out different things, so I put all t
 
 
 
-## 🧠 What I learned from this
+🧠 What I learned from this
 
 * How HTML structure works
 * CSS styling and layout
@@ -28,14 +28,14 @@ Basically, I was just practicing and trying out different things, so I put all t
 
 
 
-## 💡 Why this repo exists
+💡 Why this repo exists
 
 This is just my practice work from when I was starting web development.
 Nothing fancy, just learning by doing.
 
 
 
-## 🛠️ Tech used
+🛠️ Tech used
 
 * HTML
 * CSS
